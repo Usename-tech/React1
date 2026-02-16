@@ -1,0 +1,28 @@
+.users-container {
+    padding: 50px;
+}
+
+.users-data {
+    width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px blue;
+}
+
+.users-data table {
+    width: 100px;
+}
+
+.users-container button {
+    margin-top: 15px;
+}
+
+.users-data thead {
+
+    background-color: black;
+    color: cornsilk;
+
+}
+
+.users-data img {
+    border-radius: 50%;
+}
