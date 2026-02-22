@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -9,12 +10,12 @@ function Navbar() {
                 <h1>Dude's Mart</h1>
             </div>
             <div id="links">
-                <a href="/">Home</a>
-                <a href="/products">Products</a>
-                <a href="/profile">Profile</a>
-                <a href="/contact">ContactUs</a>
-                <a href="/sign-in">Sign-In</a>
-                <a href="/sign-up">Sign-Up</a>
+                <Link to="/">Home</Link>
+                <Link to="/products">Products</Link>
+                <Link to="/profile">Profile</Link>
+                <Link to="/contact">ContactUs</Link>
+                <Link to="/sign-in">Sign-In</Link>
+                <Link to="/sign-up">Sign-Up</Link>
             </div>
             <div id="icons">
                 <i style={{ fontSize: "21px" }} className="bi bi-person-circle"></i>

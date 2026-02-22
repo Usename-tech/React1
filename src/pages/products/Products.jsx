@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./Products.css";
 import { filterProductBasedOnCategory, getAllProducts } from "./Products";
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 
 
@@ -55,7 +56,10 @@ function Products() {
                                 <img src={product.image} width={"100%"} height={"230px"} alt="" />
                                 <h3>{product.title}</h3>
                                 <p>${product.price}</p>
-                                <button style={{ backgroundColor: "coral" }}>Product Details</button>
+                                <Link to="/product-details">
+                                    <button style={{ backgroundColor: "coral" }}>Product Details</button>
+
+                                </Link>
                                 <button style={{ backgroundColor: "green" }}>Add to Cart</button>
                             </div>
 
